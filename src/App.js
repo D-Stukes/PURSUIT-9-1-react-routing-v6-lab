@@ -9,7 +9,7 @@ import Footer from "./components/common/Footer";
 import Home from "./components/home/Home";
 import StaffList from "./components/staff/StaffList";
 import PetsList from "./components/pets/PetsList";
-
+import NotFound from "./components/common/NotFound";
 /*
   Data
   ---------------
@@ -44,6 +44,9 @@ function App() {
 
             <Route
               path = "pets/:kind" element={<PetsList pets={pets} />} />
+
+            <Route
+              path = "*" element={<NotFound />} />
 
         </Routes>
         <Footer />
